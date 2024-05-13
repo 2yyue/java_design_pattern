@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fatey.liu</groupId>
+    <artifactId>java_design_pattern</artifactId>
+    <version>v0.1.0</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <!--  Java版本  -->
+        <java.version>21</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compilier.source>21</maven.compilier.source>
+        <maven.compilier.target>21</maven.compilier.target>
+    </properties>
+
+    <name>Java_Design_pattern</name>
+    <description>Java设计模式学习</description>
+
+</project>
