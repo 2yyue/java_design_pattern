@@ -1,5 +1,7 @@
 package com.fatey.liu.creational._01_simple_factory.demo02;
 
+import com.fatey.liu.XMLUtil;
+
 /**
  * @ClassName: Client
  * @Description: 主函数，通过电视工厂生产不同品牌的电视
@@ -12,6 +14,8 @@ public class Client {
     public static void main(String[] args) {
         TV huaweiTV = TVFactory.getTVBrand("huawei");
         huaweiTV.play();
+        TV sonyTV = TVFactory.getTVBrand(XMLUtil.getStringParm());
+        sonyTV.play();
     }
 
 }
