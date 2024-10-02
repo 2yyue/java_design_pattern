@@ -12,9 +12,9 @@ import com.fatey.liu.XMLUtil;
 public class Client {
 
     public static void main(String[] args) {
-        TV huaweiTV = TVFactory.getTVBrand("huawei");
+        TV huaweiTV = TVFactory.getBrand("huawei");
         huaweiTV.play();
-        TV sonyTV = TVFactory.getTVBrand(XMLUtil.getStringParm());
+        TV sonyTV = TVFactory.getBrand(XMLUtil.getStringParm());
         sonyTV.play();
     }
 

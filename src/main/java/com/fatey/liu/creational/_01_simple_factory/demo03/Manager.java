@@ -16,5 +16,4 @@ public class Manager extends User {
     void otherInfo() {
         System.out.println("经理可以请假，可以审批员工假条");
     }
-
 }

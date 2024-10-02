@@ -18,5 +18,4 @@ public class Client {
         animal.name = "Tom";
         animal.show();
     }
-
 }

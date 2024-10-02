@@ -10,13 +10,14 @@ package com.fatey.liu.creational._01_simple_factory.demo01;
 public class PayMethodFactory {
 
     public static AbstractPay getPayMethod(String type) {
-        if (type.equalsIgnoreCase("cash")) {
+        if ("cash".equalsIgnoreCase(type)) {
             return new CashPay();
-        } else if (type.equalsIgnoreCase("creditcard")) {
+        } else if ("creditcard".equalsIgnoreCase(type)) {
             return new CreditcardPay();
-        } else if (type.equalsIgnoreCase("weixin")) {
+        } else if ("weixin".equalsIgnoreCase(type)) {
             return new WeixinPay();
-        } else if (type.equalsIgnoreCase("alipay")) {
+        } else if ("alipay".equalsIgnoreCase(type)) {
+        // } else if (type.equalsIgnoreCase("alipay")) {
             return new AliPayPay();
         } else {
             return null;

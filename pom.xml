@@ -12,10 +12,10 @@
 
     <properties>
         <!--  Java版本  -->
-        <java.version>21</java.version>
+<!--        <java.version>21</java.version>-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compilier.source>21</maven.compilier.source>
-        <maven.compilier.target>21</maven.compilier.target>
+        <maven.compilier.source>22</maven.compilier.source>
+        <maven.compilier.target>22</maven.compilier.target>
     </properties>
 
     <name>Java_Design_pattern</name>

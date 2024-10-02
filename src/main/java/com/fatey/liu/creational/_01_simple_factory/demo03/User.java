@@ -13,5 +13,4 @@ public abstract class User {
         System.out.println("修改个人资料");
     }
     abstract void otherInfo();
-
 }

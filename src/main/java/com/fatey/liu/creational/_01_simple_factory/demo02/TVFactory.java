@@ -9,10 +9,10 @@ package com.fatey.liu.creational._01_simple_factory.demo02;
  */
 public class TVFactory {
 
-    public static TV getTVBrand(String brand) {
-        if (brand.equalsIgnoreCase("huawei")) {
+    public static TV getBrand(String brand) {
+        if ("huawei".equalsIgnoreCase(brand)) {
             return new HuaweiTV();
-        } else if (brand.equalsIgnoreCase("sony")) {
+        } else if ("sony".equalsIgnoreCase(brand)) {
             return new SonyTV();
         } else {
             return null;

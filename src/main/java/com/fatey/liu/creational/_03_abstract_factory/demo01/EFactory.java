@@ -5,8 +5,8 @@ package com.fatey.liu.creational._03_abstract_factory.demo01;
  * @description 类描述
  * @created 2024/10/2 下午9:05
  */
-public interface EFacotry {
+public interface EFactory {
 	Television produceTelevision();
-
+	
 	AirConditioner produceAirConditioner();
 }

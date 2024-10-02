@@ -10,10 +10,15 @@ package com.fatey.liu.creational._01_simple_factory.demo03;
 public class Client {
 
     public static void main(String[] args) {
-        UserDao userDao = new UserDao();
-        User zhangsan = UserFactory.getUser(userDao.getPermission("zhangsan", "123456"));
-        zhangsan.updateInfo();
-        zhangsan.otherInfo();
+        try {
+            UserDao userDao = new UserDao();
+            User zhangsan = UserFactory.getUser(userDao.getPermission("zhangsan", "123456"));
+            zhangsan.updateInfo();
+            zhangsan.otherInfo();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

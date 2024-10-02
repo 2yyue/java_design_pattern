@@ -12,6 +12,8 @@ public class Client {
     public static void main(String[] args) {
         AbstractPay weixinPay = PayMethodFactory.getPayMethod("weixin");
         weixinPay.pay();
+        PayEnum payEnum = PayEnum.CASH;
+        payEnum.pay();
     }
 
 }

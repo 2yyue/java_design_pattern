@@ -16,5 +16,4 @@ public class Administrator extends User {
     void otherInfo() {
         System.out.println("管理员可以管理所有假条");
     }
-
 }

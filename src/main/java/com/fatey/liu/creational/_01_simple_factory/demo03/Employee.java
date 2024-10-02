@@ -16,5 +16,4 @@ public class Employee extends User {
     void otherInfo() {
         System.out.println("员工有请假权限");
     }
-
 }

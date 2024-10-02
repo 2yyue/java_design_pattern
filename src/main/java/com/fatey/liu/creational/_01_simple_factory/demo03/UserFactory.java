@@ -21,5 +21,4 @@ public class UserFactory {
             return new Employee();
         }
     }
-
 }
