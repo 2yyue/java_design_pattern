@@ -12,13 +12,22 @@
 
     <properties>
         <!--  Java版本  -->
-<!--        <java.version>21</java.version>-->
+        <java-version>22</java-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <maven.compilier.source>22</maven.compilier.source>
         <maven.compilier.target>22</maven.compilier.target>
     </properties>
 
     <name>Java_Design_pattern</name>
     <description>Java设计模式学习</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.32</version>
+        </dependency>
+    </dependencies>
 
 </project>

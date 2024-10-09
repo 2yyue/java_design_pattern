@@ -19,7 +19,6 @@ import java.io.IOException;
  * @Version: v1.0
  */
 public class XMLUtil {
-
     public static String getStringParm() {
         try {
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
@@ -32,5 +31,4 @@ public class XMLUtil {
             throw new RuntimeException(eParm);
         }
     }
-
 }

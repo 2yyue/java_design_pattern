@@ -1,4 +1,4 @@
-package com.fatey.liu.creational._06_singleton;
+package com.fatey.liu.creational._06_singleton.demo01;
 
 /**
  * @author Liu Fatey
@@ -9,6 +9,6 @@ public class Application {
 	public static void main(String[] args) {
 		Singleton singleton = Singleton.getInstance();
 		Singleton singleton1 = Singleton.getInstance();
-		System.out.println(singleton1==singleton);
+		System.out.println(singleton1 == singleton);
 	}
 }

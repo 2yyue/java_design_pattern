@@ -5,7 +5,15 @@ package com.fatey.liu.creational._04_builder.demo01;
  * @description 类描述
  * @created 2024/10/2 下午10:17
  */
-public class Builder {
-
-
+public abstract class MealBuilder {
+	protected Meal meal = new Meal();
+	
+	public abstract void buildFood();
+	
+	public abstract void buildDrink();
+	
+	public Meal getMeal() {
+		return meal;
+	}
+	
 }

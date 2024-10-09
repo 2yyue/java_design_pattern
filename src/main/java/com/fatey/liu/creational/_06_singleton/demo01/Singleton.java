@@ -1,4 +1,4 @@
-package com.fatey.liu.creational._06_singleton;
+package com.fatey.liu.creational._06_singleton.demo01;
 
 /**
  * @author Liu Fatey
@@ -7,12 +7,14 @@ package com.fatey.liu.creational._06_singleton;
  */
 public class Singleton {
 	private static volatile Singleton instance = null;
-	private Singleton(){
+	
+	private Singleton() {
 	}
+	
 	public static Singleton getInstance() {
-		if(instance==null) {
+		if(instance == null) {
 			synchronized(Singleton.class) {
-				if(instance==null) {
+				if(instance == null) {
 					instance = new Singleton();
 				}
 			}
