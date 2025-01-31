@@ -3,14 +3,10 @@ package com.fatey.liu;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
-import java.io.IOException;
-
 /**
  * @ClassName: XMLUtil
  * @Description: XML配置文件操作类
@@ -27,8 +23,8 @@ public class XMLUtil {
             NodeList stringParm = doc.getElementsByTagName("StringParm");
             Node firstChild = stringParm.item(0).getFirstChild();
             return firstChild.getNodeValue().trim();
-        } catch (ParserConfigurationException | IOException | SAXException eParm) {
-            throw new RuntimeException(eParm);
+        } catch(Exception e) {
+            throw new RuntimeException(e);
         }
     }
 }
